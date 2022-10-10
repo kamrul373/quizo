@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from "../../assets/img/banner.jpg"
 const Header = () => {
     return (
-        <div className="relative">
+        <div className="relative overflow-hidden">
             <img
                 src={Banner}
                 className="absolute inset-0 object-cover w-full h-full"
@@ -11,8 +11,8 @@ const Header = () => {
             />
             <div className="relative bg-gray-900 bg-opacity-75 ">
                 <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                    <div className="flex flex-col items-center justify-center xl:flex-row lg:h-[370px]">
-                        <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                    <div className="flex flex-col items-center justify-center xl:flex-row">
+                        <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 lg:py-24">
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                                 Winners train losers complain
                             </h2>

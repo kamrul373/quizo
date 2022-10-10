@@ -1,19 +1,22 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useLoaderData } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
 import Home from './Home/Home';
 import Main from './Layout/Main';
+import loadTopic from './Utility/loadTopic';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      loader: loadTopic,
       children: [
-        { path: "/home", element: <Home></Home> }
+        { path: "/", loader: loadTopic, element: <Home></Home> },
+        { path: "/home", loader: loadTopic, element: <Home></Home> }
       ]
     }
   ])
+
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
