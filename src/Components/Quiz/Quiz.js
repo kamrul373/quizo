@@ -28,10 +28,10 @@ const Quiz = () => {
     return (
         <div className='p-8'>
             <h2 className='text-4xl mb-8'>Quiz of : {name}</h2>
-            <div className='bg-white p-8 w-[250px] mx-auto lg:fixed static top-48 right-2'>
-                <small className='text-green-600'>Correct Answer : {correct.length} </small>
+            <div className='bg-white font-semibold p-8 w-[250px] mx-auto lg:fixed static top-48 right-2'>
+                <small className='text-green-600 text-xl'>Correct Answer : {correct.length} </small>
                 <br />
-                <small className='text-red-600'>Wrong Answer : {wrong.length}</small>
+                <small className='text-red-600 font-semibold'>Wrong Answer : {wrong.length}</small>
             </div>
             <QuestioncOontext.Provider value={handlerAnswer}>
                 {
