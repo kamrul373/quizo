@@ -13,7 +13,7 @@ const Question = ({ questionData, idx }) => {
                 {
                     showCorrect ? <XMarkIcon className="h-6 w-6 text-white absolute top-3 right-5" onClick={() => setShowCorrect(!showCorrect)} /> : <EyeIcon className="h-6 w-6 text-white absolute top-3 right-5" onClick={() => setShowCorrect(!showCorrect)} />
                 }
-                <div className={`bg-white text-green-600 font-semibold p-4 absolute top-10 right-5 ${showCorrect || "hidden"} `}>
+                <div className={`bg-white text-green-600 font-semibold p-4 absolute top-10 right-5  ${showCorrect || "hidden"} `}>
                     <p className='text-black font-bold'>Correct Answer :</p>
                     {
                         showCorrect ? questionData.correctAnswer : ""
