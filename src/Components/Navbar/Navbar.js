@@ -17,7 +17,7 @@ const Navbar = () => {
                             open ? <XMarkIcon /> : <Bars3Icon />
                         }
                     </div>
-                    <ul className={`md:py-3 w-full lg:static absolute duration-700 ease-in  lg:bg-white bg-violet-200 ${open ? "top-[65px]" : "top-[-350px]"}`}>
+                    <ul className={`md:py-3 w-full lg:static absolute duration-500 ease-in  lg:bg-white bg-violet-200 ${open ? "top-[65px]" : "top-[-350px]"}`}>
                         <NavItem open={open}></NavItem>
                     </ul>
 

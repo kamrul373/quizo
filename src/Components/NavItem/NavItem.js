@@ -4,7 +4,7 @@ import "./NavItem.css";
 
 const NavItem = () => {
     return (
-        <div className='lg:flex'>
+        <div className='lg:flex lg:py-0 py-[20px]'>
             <li className='md:mb-2'>
                 <NavLink
                     className={`mx-3 text-lg hover:text-green-500  ${({ isActive }) => isActive && "active"} `} to="/home"

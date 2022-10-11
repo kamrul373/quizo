@@ -5,7 +5,6 @@ import { useState } from 'react';
 const Question = ({ questionData, idx }) => {
     const { question, options, id } = questionData;
     const [showCorrect, setShowCorrect] = useState(false);
-    console.log(questionData);
     return (
         <div className='bg-green-600 my-4 p-8 w-[60%] mx-auto shadow-md relative'>
             {/* Eye icon to showing correct answer */}
