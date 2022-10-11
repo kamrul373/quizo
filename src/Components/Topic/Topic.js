@@ -12,9 +12,11 @@ const Topic = ({ topic }) => {
                 <h4 className='text-2xl font-bold'>{name}</h4>
                 <p>Total Questions : {total} </p>
             </div>
-            <button className='px-16 py-3 my-4 text-white font-bold bg-green-600 rounded hover:bg-green-700 duration-700'>
-                <Link to={`/quiz/${id}`}>Start Quiz</Link>
-            </button>
+
+            <div className='my-6'>
+                <Link className='px-16 py-3 my-4 text-white font-bold bg-green-600 rounded hover:bg-green-700 duration-700' to={`/quiz/${id}`}>Start Quiz</Link>
+            </div>
+
         </div>
     );
 };
