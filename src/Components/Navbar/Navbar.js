@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='sticky top-0 z-50'>
             <div className='bg-white lg:flex lg:px-8  py-4 px-0 justify-between items-center rounded shadow-lg relative'>
                 <div className="logo">
-                    <h3 className='text-4xl font-bold italic text-violet-500 mb-3 lg:mb-0'><Link to="/">Quizo</Link></h3>
+                    <h3 className='text-4xl font-bold italic text-green-500 mb-3 lg:mb-0'><Link to="/">Quizo</Link></h3>
                 </div>
                 <nav>
                     <div className={`lg:hidden h-8 w-8 absolute right-5 top-8 z-40`} onClick={() => setOpen(!open)}>

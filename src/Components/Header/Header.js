@@ -21,7 +21,7 @@ const Header = () => {
                             </p>
                             <Link
                                 to="/topics"
-                                className='bg-violet-700 hover:bg-violet-900 duration-500 text-white px-8 py-3 rounded'
+                                className='bg-green-700 hover:bg-green-600 duration-500 text-white px-8 py-3 rounded'
                             >
                                 Get Started
                                 <svg
