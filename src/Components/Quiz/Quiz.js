@@ -28,6 +28,11 @@ const Quiz = () => {
     return (
         <div className='p-8'>
             <h2 className='text-4xl mb-8'>Quiz of : {name}</h2>
+            <div className='bg-white p-8 w-[250px] mx-auto lg:fixed static top-48 right-2'>
+                <small className='text-green-600'>Correct Answer : {correct.length} </small>
+                <br />
+                <small className='text-red-600'>Wrong Answer : {wrong.length}</small>
+            </div>
             <QuestioncOontext.Provider value={handlerAnswer}>
                 {
                     questions.map((questionData, idx) => <Question
@@ -37,11 +42,7 @@ const Quiz = () => {
                     ></Question>)
                 }
             </QuestioncOontext.Provider>
-            <div className='bg-white p-8 w-[250px] fixed top-48 right-2'>
-                <small className='text-green-600'>Correct Answer : {correct.length} </small>
-                <br />
-                <small className='text-red-600'>Wrong Answer : {wrong.length}</small>
-            </div>
+
             <ToastContainer autoClose={1000} />
         </div>
     );

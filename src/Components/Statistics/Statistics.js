@@ -9,7 +9,7 @@ const Statistics = () => {
     return (
         <div className='mt-8 px-12 '>
             <h2 className='text-3xl text-green-600 font-semibold'>Topics Question Stat</h2>
-            <div>
+            <div className='flex justify-center'>
                 <PieChart width={400} height={400} >
                     <Pie
                         dataKey="total"
