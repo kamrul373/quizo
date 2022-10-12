@@ -26,7 +26,11 @@ function App() {
         },
         { path: "/topics", element: <Topics></Topics> },
         { path: "/statistics", element: <Statistics></Statistics> },
-        { path: "/blogs", element: <Blogs></Blogs> },
+        {
+          path: "/blogs",
+          loader: async () => fetch("blogs.json"),
+          element: <Blogs></Blogs>
+        },
       ]
     }
   ])

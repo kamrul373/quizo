@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "What are purpose of React Route?",
+        "img": "https://miro.medium.com/max/880/1*kjZAT2HyYLv5gKT9SMBAHA.png",
+        "short_description": "React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.",
+        "description_1": "Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.React Router is a standard library system built on top of the React and used to create routing in the React application using React Router Package. It provides the synchronous URL on the browser with data that will be displayed on the web page. It maintains the standard structure and behavior of the application and mainly used for developing single page web applications.",
+        "description_2": "React Router plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. Most of the social media websites like Facebook, Instagram uses React Router for rendering multiple views."
+    },
+    {
+        "id": 2,
+        "title": "How Context API works?",
+        "img": "https://miro.medium.com/max/1400/1*YHoRhY7rQGbW1hzOJHgFFg.png",
+        "short_description": "The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to prop drilling or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management.",
+        "description_1": "When building React application, often we end up in a situation where we have multiple nested components. If a prop has to be passed from a parent component to the last of the child component it has to be passed through each component on the way even thought it might be used in-between.Context API works by declaring a global state that can be pulled into any component.Context allows passing data through the component tree without passing props down manually at every level.",
+        "description_2": "There are two main steps to use the React context into the React application:Setup a context provider and define the data which you want to store.Use a context consumer whenever you need the data from the store.The Context API in React are : React.createContext, Context.provider, Context.Consumer, Class.contextType.Context is used to share data which can be considered global for React components tree and use that data where needed, such as the current authenticated user, theme, etc."
+    },
+    {
+        "id": 3,
+        "title": "What is useRef()?",
+        "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--fBV9Brp0--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qnwi8ehe64zysba5y195.png",
+        "short_description": "The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. The useRef Hook allows you to persist values between renders.It can be used to store a mutable value that does not cause a re-render when updated.It can be used to access a DOM element directly.",
+        "description_1": "If we tried to count how many times our application renders using the useState Hook, we would be caught in an infinite loop since this Hook itself causes a re-render.To avoid this, we can use the useRef Hook.In general, we want to let React handle all DOM manipulation But there are some instances where useRef can be used without causing issues.In React, we can add a ref attribute to an element to access it directly in the DOM.The useRef Hook can also be used to keep track of previous state values.This is because we are able to persist useRef values between renders.",
+        "description_2": "useRef() only returns one item. It returns an Object called current.When we initialize useRef we set the initial value: useRef(0)."
+    }
+]
