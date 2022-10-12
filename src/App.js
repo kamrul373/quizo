@@ -31,6 +31,7 @@ function App() {
           loader: async () => fetch("blogs.json"),
           element: <Blogs></Blogs>
         },
+
       ]
     }
   ])

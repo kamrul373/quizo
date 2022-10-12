@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import "./blog.css";
 
 const Blog = ({ blog }) => {
-    const { id, short_description, img, title } = blog;
+    const { img, title, short_description, description_1, description_2 } = blog;
     return (
-        <div className='blog p-8 grid lg:grid-cols-2 justify-start gap-8'>
-            <img src={img} alt={title} />
-            <div className='text-justify'>
-                <h2 className='text-4xl mb-3'>{title}</h2>
-                <p className='text-xl py-2'>{short_description}</p>
-                <div className='mt-8'>
-                    <Link to={`/blog/${id}`} className="bg-green-500 px-12 py-3 ">Read more</Link>
-                </div>
+        <div className='blog lg:p-8 p-4'>
+            <h2 className='lg:text-4xl text-2xl mb-3'>{title}</h2>
+            <div className='lg:p-8 p-4'>
+                <img src={img} alt={title} />
+            </div>
+            <div className='text-xl py-2 text-justify '>
+                <p className='py-2 '>{short_description}</p>
+                <p className='py-2'>{description_1}</p>
+                <p className='py-2'>{description_2}</p>
             </div>
         </div>
     );
