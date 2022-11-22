@@ -2,13 +2,13 @@
 ## Live Link : https://quizo-react.netlify.app/
 ## Feathres:
 * Dynamically Quiz Topics are Loading from API
-### Dynamically Quiz are loading from API
-### Quiz answer checking and result showing in react toast 
-### Total Quz number counted 
-### One Question can answer one time in a sessioBn , twice answer will not count in total.
-### Stats of total quiz question 
-### Blogs 
-### Fully Mobile responsive
+* Dynamically Quiz are loading from API
+* Quiz answer checking and result showing in react toast 
+* Total Quz number counted 
+* One Question can answer one time in a sessioBn , twice answer will not count in total.
+* Stats of total quiz question 
+* Blogs 
+* Fully Mobile responsive
 
 # Getting Started with Create React App
 
